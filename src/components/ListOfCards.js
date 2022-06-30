@@ -1,5 +1,6 @@
 import Card from "./Card";
-import NewCard from "./newCard";
+import NewCard from "./NewCard";
+import "./ListOfCards.css";
 
 const ListOfCards = () => {
   return <></>;
