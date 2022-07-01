@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Board from "./Board";
 import ClickAwayListener from "react-click-away-listener";
 
-const ListOfBoards = (props) => {
+const ListOfBoards = () => {
   // our variables and tracking state
   const [popup, setPopup] = useState(false);
   const [selected, setSelected] = useState(null);
@@ -29,8 +29,7 @@ const ListOfBoards = (props) => {
       {popup && (
         <ClickAwayListener onClickAway={() => setPopup(false)}>
           <div className={"popup"}>
-            <li>test board 1</li>
-            <li>test board</li>
+            <ol>{boardChoices}</ol>
           </div>
         </ClickAwayListener>
       )}
